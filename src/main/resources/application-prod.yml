@@ -1,0 +1,24 @@
+# AI Generated Code by Deloitte + Cursor (BEGIN)
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  h2:
+    console:
+      enabled: false
+
+logging:
+  level:
+    com.crestandthread: INFO
+    org.springframework.security: WARN
+# AI Generated Code by Deloitte + Cursor (END)
